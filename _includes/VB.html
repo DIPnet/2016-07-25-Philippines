@@ -1,0 +1,41 @@
+<h3 id="VB">Virtual Box and Biolinux</h3>
+<p>
+A virtual box with a Biolinux installer will be used for Qiime and pyRAD workshops.
+Bio-Linux is a 64-bit operating system. Virtually all modern PC processors
+support 64-bits, even if you have 32-bit Windows installed.  As a rule of thumb, if
+you have more than 1 processor core you will have 64-bit support.
+</p>
+<div class="row-fluid">
+<ol>
+<li>Download the version of VirtualBox that is appropriate for your operating
+system from <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">
+https://www.virtualbox.org/wiki/Downloads</a> and install it.</li>
+<li>Next download the OVA (Open Virtualization Archive) file to your desktop
+from<a href="http://environmentalomics.org/bio-linux- download/" target="_blank" >
+http://environmentalomics.org/bio-linux- download/</a>.*Important: Right click 
+on the link below where it says "OVA file for use with VirtualBox/VMWare" and 
+choose "Save link as" from the drop down menu.</li>
+</ol>
+<ul>
+<strong>VirtualBox setup:</strong>
+<li>Ensure you have at least 40GB free disk space.</li>
+<li>Start the VirtualBox and select <strong>Import Appliance</strong> from the File menu and import
+the .ova file (don't worry that it says you need an OVF file) and select "next"</li>
+<li>When importing the appliance, select the option to <strong>reinitialize the MAC
+addresses of network cards</strong> which is in small print below the larger menu. 
+(This step takes a few minutes.)</li>
+<li>Start the virtual machine (VM) and if you see a log-in screen, log in as
+<strong>user manager</strong> with <strong>password manager</strong>.</li>
+<li>Once this is working, you can delete the .ova file to save space.</li>
+<li>See the VirtualBox docs for more details including how to share folders and
+hardware. You will also want to adjust hardware settings such as CPU, RAM
+and video acceleration settings to suit your hardware.</li>
+</ul>
+<p>You should treat the VM as a real machine for security purposes and apply all
+system security updates in a timely manner. The default manager password is,
+clearly, not secure. This might not be a problem because by default nobody can
+access the Linux VM unless they have direct access to your computer, but if you
+open up the network settings (eg. by adding port forwarding rules) then you must
+secure the account with a strong password or else take other steps to limit remote
+access. Ideally enforce key-only access via SSH.</p>
+</div>
